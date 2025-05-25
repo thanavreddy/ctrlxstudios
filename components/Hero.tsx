@@ -7,9 +7,9 @@ const HeroSection = () => {
   return (
     <section className="relative h-[100vh]">
       {/* ASCII effect as background */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <AsciiEffectScene />
-      </div>
+      </div> */}
       
       {/* Hero content overlay */}
       <div className="relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 pb-12 flex items-end">

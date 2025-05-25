@@ -1,29 +1,144 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  overflow-x: hidden;
 }
-@layer components {
-  
+
+@layer base {
+ 
+  body {
+    @apply bg-[background] text-[foreground];
+  }
+}
+
+@layer utilities {
+  @keyframes scroll-line {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  .animate-scroll-line {
+    animation: scroll-line 1.5s ease-in-out infinite;
+  }
+}
+
+.nav-menu {
+  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-black transition-opacity duration-500 z-50;
+}
+
+.menu-item {
+  @apply relative overflow-hidden py-3 text-5xl font-light transition-transform duration-300 hover:text-white hover:translate-x-2;
+}
+
+.menu-item::after {
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300;
+}
+
+.menu-item:hover::after {
+  @apply w-full;
+}
+
+.reveal {
+  @apply opacity-0 transition-all duration-1000 ease-out;
+}
+
+.reveal.active {
+  @apply opacity-100 translate-y-0;
+}
+
+.reveal-up {
+  @apply translate-y-12;
+}
+
+.reveal-down {
+  @apply -translate-y-12;
+}
+
+.reveal-left {
+  @apply translate-x-12;
+}
+
+.reveal-right {
+  @apply -translate-x-12;
+}
+
+.canvas-container {
+  @apply fixed top-0 left-0 w-full h-full pointer-events-none z-0;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-tighter;
+}
+
+.section-subtitle {
+  @apply text-xl md:text-2xl font-light text-gray-400 mb-12;
+}
+
+.scroll-indicator {
+  @apply fixed right-8 bottom-8 flex flex-col items-center opacity-70 z-10;
+}
+
+.scroll-indicator .line {
+  @apply w-[1px] h-24 bg-white/30 relative overflow-hidden;
+}
+
+.scroll-indicator .line::after {
+  @apply content-[''] absolute top-0 left-0 w-full h-full bg-white transform translate-y-full;
+  animation: scroll-line 1.5s ease-in-out infinite;
+}
+
+.service-card {
+  @apply border border-gray-800 p-6 rounded-md transition-all duration-300 hover:border-gray-600 hover:bg-gray-900/20;
+}
+
+.project-card {
+  @apply relative overflow-hidden rounded-md;
+}
+
+.project-card-content {
+  @apply absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300;
+}
+
+.project-card:hover .project-card-content {
+  @apply opacity-100;
+}
+
+.contact-button {
+  @apply relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium transition-all bg-white rounded-md text-black hover:bg-white;
+}
+
+.contact-button span {
+  @apply absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform;
+  @apply -translate-y-10 opacity-0;
+}
+
+.contact-button span:after {
+  @apply absolute content-[''] bg-white w-full h-full left-0 top-0 -z-10;
+}
+
+.contact-button:hover span:after {
+  @apply bg-white;
+}
+
+.contact-button:hover span {
+  @apply -translate-y-0 opacity-100;
+}
+
+.contact-button span:first-child {
+  @apply translate-y-0 opacity-100;
+}
+
+.contact-button:hover span:first-child {
+  @apply translate-y-10 opacity-0;
 }
