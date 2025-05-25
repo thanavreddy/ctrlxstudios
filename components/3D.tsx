@@ -29,25 +29,26 @@ function Model({ scrollY }: { scrollY: number }) {
       floatIntensity={0.5}
     >
       <mesh ref={meshRef}>
-        <octahedronGeometry args={[2, 0]} />
+        <octahedronGeometry args={[2, 0]}  />
         <meshStandardMaterial 
-          color="#ffffff" 
-          metalness={0.8} 
-          roughness={0.2} 
+          color="#8ec5ff" 
+          metalness={0.2} 
+          roughness={0.1} 
           wireframe={true}
+
         />
       </mesh>
     </Float>
   );
 }
 
-export function Canvas3D() {
+export default function Element3D() {
   const { scrollY } = useScroll();
 
   return (
     <div className="canvas-container">
       <Canvas camera={{ position: [0, 0, 10], fov: 45 }}>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.8} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <Model scrollY={scrollY} />
       </Canvas>
