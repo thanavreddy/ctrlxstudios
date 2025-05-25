@@ -34,7 +34,7 @@ body {
 }
 
 .nav-menu {
-  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-black transition-opacity duration-500 z-50;
+  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-black transition-opacity duration-500 z-50 font-[Poppins] font-normal;
 }
 
 .my-nav { 
