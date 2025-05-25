@@ -5,7 +5,7 @@ import AsciiEffectScene from "./Ascii";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[100vh]">
+    <section className="relative h-[100vh] ">
       {/* ASCII effect as background */}
       {/* <div className="absolute inset-0 z-0">
         <AsciiEffectScene />
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
           
           {/* Button in bottom right */}
-          <button className="absolute bottom-12 right-6 md:right-16 bg-black text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform">
+          <button className="absolute bottom-12 right-6 md:right-16 bg-black text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform border-2">
             Contact Us
           </button>
         </div>

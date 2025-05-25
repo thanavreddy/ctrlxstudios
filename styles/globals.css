@@ -37,6 +37,12 @@ body {
   @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-black transition-opacity duration-500 z-50;
 }
 
+.my-nav { 
+  @apply self-stretch px-10 py-14 inline-flex justify-between items-center overflow-hidden w-full bg-white
+}
+.my-logo{
+  @apply w-28 h-12 text-center justify-start text-white text-4xl font-semibold font-['Poppins']
+}
 .menu-item {
   @apply relative overflow-hidden py-3 text-5xl font-light transition-transform duration-300 hover:text-white hover:translate-x-2;
 }
