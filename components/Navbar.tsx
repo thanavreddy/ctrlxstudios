@@ -100,11 +100,11 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-12 py-14 self-stretch",
+          "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-10 py-14 self-stretch",
           scrolled ? "bg-transparent" : "bg-transparent"
         )}
       >
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
+        <nav className="flex items-center justify-between  mx-auto">
           <div className="my-logo">
           <Link
             href="/"
