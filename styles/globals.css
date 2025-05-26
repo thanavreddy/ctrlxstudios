@@ -165,3 +165,7 @@ body {
 .service-item:hover::after {
     @apply w-full;
 }
+
+.service-details-item{
+  @apply self-end right-6 md:right-16 bg-black text-white font-normal px-6 py-3  hover:scale-105 transition-transform border-2
+}

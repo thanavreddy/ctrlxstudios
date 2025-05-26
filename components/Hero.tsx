@@ -48,7 +48,7 @@ export default function HeroSection() {
 
             <motion.p
               variants={fadeInUpVariants}
-              className="text-gray-700 text-base md:text-lg max-w-xl mt-4"
+              className="text-gray-400 text-base md:text-lg max-w-xl mt-4"
             >
               we provide the best editing, web design and many more services
             </motion.p>
