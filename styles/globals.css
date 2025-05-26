@@ -153,3 +153,15 @@ body {
 .old-contact-button{
   @apply absolute bottom-12 right-6 md:right-16 bg-black text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform border-2
 }
+
+.service-item {
+  @apply relative overflow-hidden py-3 text-3xl font-semibold transition-transform duration-300 hover:text-white hover:translate-x-1 hover:cursor-pointer font-[Poppins];
+}
+
+.service-item::after {
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 cursor-pointer;
+}
+
+.service-item:hover::after {
+    @apply w-full;
+}
