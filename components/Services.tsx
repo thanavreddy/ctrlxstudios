@@ -13,7 +13,7 @@ const Services = () => {
     },
   };
   return (
-    <div className=" bg-black items-center justify-center flex-col h-screen w-full">
+    <div className=" bg-black items-center justify-center flex-col h-[1024px] w-full">
       <div className="absolute left-36 mt-26">
         <div className="mb-7">
           <p className="text-white text-2xl">Services</p>
@@ -29,7 +29,7 @@ const Services = () => {
             }}
         initial="hidden"
             animate="visible"
-        className="text-6xl text-white font-[Poppins] font-semibold w-auto mt-15">
+        className="text-5xl md:text-6xl text-white font-[Poppins] font-semibold w-auto mt-15">
        <motion.h1  variants={fadeInUpVariants}>   We Provide the best
           <br /> service, without Revision
           <br />
