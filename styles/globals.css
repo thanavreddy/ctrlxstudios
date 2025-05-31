@@ -84,7 +84,7 @@ body {
 }
 
 .section-title {
-  @apply text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-tighter;
+  @apply text-4xl md:text-5xl lg:text-6xl  mb-6 tracking-tighter text-white font-[Poppins] font-semibold ;
 }
 
 .section-subtitle {
@@ -168,4 +168,41 @@ body {
 
 .service-details-item{
   @apply self-end right-6 md:right-16 bg-black text-white font-normal px-6 py-3  hover:scale-105 transition-transform border-2
+}
+
+
+.section-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-tighter;
+}
+
+.section-subtitle {
+  @apply text-xl md:text-2xl font-light text-gray-400 mb-12;
+}
+
+.reveal {
+  @apply opacity-0 transition-all duration-1000 ease-out;
+}
+
+.reveal.active {
+  @apply opacity-100 translate-y-0;
+}
+
+.reveal-up {
+  @apply translate-y-12;
+}
+
+.reveal-down {
+  @apply -translate-y-12;
+}
+
+.reveal-left {
+  @apply translate-x-12;
+}
+
+.reveal-right {
+  @apply -translate-x-12;
+}
+
+.contact-contact-section{
+  @apply   text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105  border-2 border-white mt-7 
 }

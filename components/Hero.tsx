@@ -33,7 +33,7 @@ export default function HeroSection() {
           >
             <motion.h1
               variants={fadeInUpVariants}
-              className="text-5xl md:text-6xl font-bold leading-tight"
+              className="text-5xl md:text-6xl font-semibold leading-tight"
             >
               Create
             </motion.h1>
@@ -43,7 +43,7 @@ export default function HeroSection() {
               className="flex items-center space-x-4 mt-2"
             >
               <span className="block w-12 h-[4px] bg-white"></span>
-              <span className="text-5xl md:text-6xl font-bold">the unexpected</span>
+              <span className="text-5xl md:text-6xl font-semibold">the unexpected</span>
             </motion.div>
 
             <motion.p
