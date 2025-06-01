@@ -8,10 +8,10 @@ export function ContactSection() {
     <section 
       id="contact" 
       ref={sectionRef}
-      className="py-24 px-6 md:px-12 bg-transparent text-white" 
+      className="pt-24 px-6 md:px-12 bg-transparent text-blue-300" 
     >
       <div className="max-w-7xl mx-auto bg-transparent">
-        <div className="text-center mb-16 text-white hover:text-blue-300 ">
+        <div className="text-center mb-16 text-blue-300 ">
           <h2 className="section-title font-semibold ">
             Because every change<br />begins with an action
           </h2>
