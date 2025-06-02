@@ -1,6 +1,11 @@
+
+'use client'
+import { useRef } from "react";
+
 export function Footer() {
+  
   return (
-    <footer className="py-12 px-6 md:px-12 border-t border-gray-800">
+    <footer className="py-12 px-6 md:px-12 border-t border-gray-800 bg-transparent relative " >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
