@@ -1,8 +1,8 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, OrbitControls, Environment, Float } from '@react-three/drei';
+import {  Float } from '@react-three/drei';
 import * as THREE from 'three';
 import { useScroll } from '@/hooks/use-scroll';
 
@@ -32,9 +32,10 @@ function Model({ scrollY }: { scrollY: number }) {
         <octahedronGeometry args={[2, 0]}  />
         <meshStandardMaterial 
           color="#8ec5ff" 
-          metalness={0.2} 
-          roughness={0.1} 
+          metalness={0.001} 
+          roughness={100} 
           wireframe={true}
+          
 
         />
       </mesh>

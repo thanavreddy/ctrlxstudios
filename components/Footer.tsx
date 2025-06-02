@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <div className="mb-6 space-y-2">
               <p className="text-xl">contact@ctrlx.com</p>
-              <p className="text-xl">+91 9652804722</p>
+              <p className="text-xl italiano">+91 9652804722</p>
             </div>
           </div>
 
