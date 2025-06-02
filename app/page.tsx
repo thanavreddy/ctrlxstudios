@@ -11,8 +11,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Element3D/>
-      <Navbar/>
+      {/* <Element3D/> */}
+      {/* <Navbar/> */}
       <Hero/>
       <Services/>
       <Works/>

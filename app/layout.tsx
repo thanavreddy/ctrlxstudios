@@ -3,6 +3,8 @@ import { Geist, Geist_Mono,Poppins} from "next/font/google";
 import "../styles/globals.css";
 // import '../styles/utilities.css'
 import '@fontsource/poppins'
+import Element3D from "@/components/3D";
+import Navbar from "@/components/Navbar";
 const geistSans = Geist({
 
   variable: "--font-geist-sans",
@@ -25,9 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+            
       <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-auto font-[Poppins] `}
-      >
+      ><Element3D/>
+      <Navbar/>
         {children}
       </body>
     </html>
