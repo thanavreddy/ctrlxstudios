@@ -157,15 +157,15 @@ body {
 }
 
 .service-item {
-  @apply relative overflow-hidden py-3 text-3xl font-semibold transition-transform duration-300 hover:text-white hover:translate-x-1 hover:cursor-pointer font-[Poppins];
+  @apply relative overflow-hidden py-3 text-3xl font-semibold transition-transform duration-300 hover:text-blue-300 hover:translate-x-1 hover:cursor-pointer font-[Poppins];
 }
 
 .service-item::after {
-  @apply content-[''] absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 cursor-pointer;
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 cursor-pointer hover:text-blue-300 ;
 }
 
 .service-item:hover::after {
-    @apply w-full;
+    @apply w-full text-blue-300 ;
 }
 
 .service-details-item{

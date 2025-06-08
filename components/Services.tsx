@@ -84,11 +84,11 @@ const Services = () => {
             </motion.h1>
           </motion.div>
 
-          <div className="w-96 h-80 relative mt-7 gap-8">
+          <div className="w-96 h-80 relative mt-7 gap-8 ">
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`service-item cursor-pointer transition-all duration-300 ${
+                className={`service-item cursor-pointer transition-all hover:text-blue-300 duration-300 ${
                   selectedService === index ? "text-blue-300" : ""
                 }`}
                 onClick={() => setSelectedService(index)}
