@@ -55,8 +55,8 @@ const Services = () => {
 
   return (
     <section ref={sectionRef} className="relative h-[1300px]">
-      <div className="relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
-        <div className="absolute left-36 mt-26">
+      <div className=" relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
+        <div className=" absolute left-36 mt-26 ">
           <div className="mb-7">
             <p className="text-white text-2xl">Services</p>
             <span className="h-[2.5px] w-[42px] bg-white block"></span>
@@ -129,7 +129,7 @@ const Services = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="w-96 h-60 justify-start text-white text-xl font-medium font-['Poppins'] leading-relaxed"
+                className="w-96 h-60 justify-start right-6 md:right-16 text-white text-xl font-medium font-['Poppins'] leading-relaxed"
               >
                 {services[selectedService].description}
               </motion.div>
