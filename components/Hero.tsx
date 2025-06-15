@@ -61,7 +61,7 @@ export default function HeroSection() {
 
           >
             <button className="old-contact-button">
-            <a href="#contact" >
+            <a href="/contact" >
               Contact us
             </a>
             </button>

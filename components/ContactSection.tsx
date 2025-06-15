@@ -43,7 +43,9 @@ export function ContactSection  () {
             begins with an action
           </h1>
           <button className="rounded-full shadow-md font-semibold text-white border-2 px-6 py-3 border-white mt-9 hover:scale-105 hover:cursor-pointer">
-Contact Us
+           <a href="/contact" >
+              Contact us
+            </a>
           </button>
         </div>
       </div>
