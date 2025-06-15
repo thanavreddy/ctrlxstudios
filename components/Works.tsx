@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 import { useRef } from "react";
 import Image from "next/image";
+
 const Works = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
   return (
     <section className="relative h-[100vh] ">
       <div className="absolute left-36 mt-22 mb-6">
@@ -26,8 +26,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-      <div className="absolute right-2  rounded-3xl   backdrop-blur-sm  bottom-2 w-[75%] h-[50%] flex items-center ">
-      
+      <div className="absolute right-2  rounded-3xl backdrop-blur-md  bottom-2 w-[75%] h-[50%] flex items-center  ">
       <div className="w-full flex items-center space-x-4 h-[90%]  ">
         <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-evenly ">
 
