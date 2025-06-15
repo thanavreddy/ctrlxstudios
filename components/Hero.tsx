@@ -14,6 +14,12 @@ export default function HeroSection() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
+  const handleMouseMove = (e : MouseEvent) => {
+    const x = e.pageX - e.target.offsetLeft;
+    const y = e.pageY - e.target.offsetTop;
+    e.target.style.setProperty('--x', x + 'px');
+    e.target.style.setProperty('--y', y + 'px');
+  };
 
   return (
     <section ref={sectionRef} className="relative h-[100vh]">
@@ -48,7 +54,7 @@ export default function HeroSection() {
 
             <motion.p
               variants={fadeInUpVariants}
-              className="text-gray-400 text-base md:text-lg max-w-xl mt-4"
+              className="text-gray-400 text-base md:text-lg max-w-xl mt-4 "
             >
               we provide the best editing, web design and many more services
             </motion.p>
@@ -60,11 +66,13 @@ export default function HeroSection() {
             transition={{ delay: 1.2, duration: 0.8 }}
 
           >
-            <button className="old-contact-button">
-            <a href="/contact" >
-              Contact us
-            </a>
-            </button>
+            <div className="end hidden md:block absolute md:static " onMouseMove={handleMouseMove}>
+        <a href="/contact" className='btn contact_btn_new font-semibold text-white border-white border text-sm py-3 px-6 rounded-full cursor-pointer scale-110 '>
+          <span>
+            Contact Us
+          </span>
+        </a>
+      </div>
           </motion.div>
         </div>
       </div>

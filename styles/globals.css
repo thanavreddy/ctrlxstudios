@@ -153,7 +153,7 @@ body {
 
 
 .old-contact-button{
-  @apply absolute bottom-12 right-6 md:right-16 bg-black text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform border-2
+  @apply absolute bottom-12 right-6 md:right-16  text-white font-semibold px-6 py-3 rounded-full shadow-md 
 }
 
 .service-item {
@@ -245,4 +245,42 @@ body {
 
 .italiano{
   font-style: italic;
+}
+
+
+
+.contact_btn_new {
+  @apply bottom-12 right-6 md:right-16 absolute
+}
+.btn{
+  overflow: hidden;
+  display: inline-flex;
+  transition-duration: 200ms;
+}
+.btn:hover{
+  background-color: transparent;
+  color:black
+}
+
+.btn span{
+  position: relative;
+  z-index: 100;
+}
+
+.btn::before{
+content:'';
+position: absolute;
+top: var(--y);
+Left: var(--x);
+transform: translate(-50%,-50%);
+width: 0;
+height: 0;
+border-radius: 500%;
+background: #63b3ed;
+transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before{
+  width: 250%;
+  height: 750%;
 }
