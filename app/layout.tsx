@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import '@fontsource/poppins'
 import Element3D from "@/components/3D";
 import Navbar from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 const geistSans = Geist({
 
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
   </div>
       <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

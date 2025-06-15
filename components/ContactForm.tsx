@@ -1,0 +1,154 @@
+
+'use client'
+import { CheckCircle, Send } from 'lucide-react';
+import React, { useState } from 'react'
+
+const ContactForm = () => {
+
+    const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      message: ''
+    });
+    
+    // Reset submission status after a delay
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 5000);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6 mt-7 max-w-6xl w-full">
+                     <div className="mb-10">
+              <p className="text-white text-xl">Personal Information</p>
+              <span className="h-[1.5px] w-[42px] bg-white block"></span>
+            </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+
+                  <div>
+                    <label htmlFor="name" className="block text-xl font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-300"
+                      placeholder=""
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-xl font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-300"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="company" className="block text-xl font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-300"
+                    placeholder=""
+                  />
+                </div>
+                  <div className="mb-10 mt-10">
+              <p className="text-white text-xl">Write to us</p>
+              <span className="h-[1.5px] w-[42px] bg-white block"></span>
+            </div>
+                <div>
+                  <label htmlFor="message" className="block text-xl font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
+                    How can we help?
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows={4}
+                    className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-300 resize-none"
+                    placeholder="Tell us about your project and goals..."
+                  />
+                </div>
+                
+                <button
+                  type="submit"
+                  disabled={isSubmitting || isSubmitted}
+                  className={`w-[20%] px-6 py-4 rounded-lg font-medium text-white transition-all duration-300 flex items-center justify-center
+                    ${isSubmitted 
+                      ? 'bg-green-600 hover:bg-green-700' 
+                      : 'bg-gradient-to-r from-blue-400 to-black hover:from-blue-400 hover:to-blue-200 shadow-lg hover:shadow-violet-500/25'
+                    } transform hover:scale-[1.02]`}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                      Sending...
+                    </>
+                  ) : isSubmitted ? (
+                    <>
+                      <CheckCircle className="w-5 h-5 mr-2" />
+                      Message Sent!
+                    </>
+                  ) : (
+                    <>
+                      Request a Demo
+                      <Send className="w-5 h-5 ml-2" />
+                    </>
+                  )}
+                </button>
+              </form>
+  
+  )
+}
+
+export default ContactForm
