@@ -3,6 +3,7 @@ import Element3D from "@/components/3D";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
+import { div } from "three/src/nodes/TSL.js";
 
 const ContactPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -18,7 +19,9 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex pt-50 items-center justify-center w-full text-white font-[Poppins]">
+    
+    // <div className="overflow-hidden">
+    <section ref={sectionRef} className="flex pt-50 items-center justify-center w-full text-white font-[Poppins] z-10 bg-transparent" >
       <div className="flex flex-col items-start justify-between w-full h-full px-6 md:px-16 py-1 mx-25">
         <motion.div
           initial="hidden"
@@ -44,7 +47,7 @@ const ContactPage = () => {
           </motion.p>
         </motion.div>
 
-        <div className="flex flex-col max-w-5xl items-center justify-between mt-16">
+        <form className="flex flex-col max-w-5xl items-center justify-between mt-16">
           <div className="flex flex-col w-fit items-start justify-between">
             <label className="text-2xl" htmlFor="firstname">
               First Name
@@ -57,9 +60,10 @@ const ContactPage = () => {
   onChange={(e) => setFirstName(e.target.value)}
 />
           </div>
-        </div>
+        </form>
       </div>
-    </div>
+    </section>
+    // </div>
   );
 };
 

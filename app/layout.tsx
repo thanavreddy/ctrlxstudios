@@ -30,7 +30,10 @@ export default function RootLayout({
             
       <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-auto font-[Poppins] `}
-      ><Element3D/>
+      >
+    <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
+    <Element3D />
+  </div>
       <Navbar/>
         {children}
       </body>
