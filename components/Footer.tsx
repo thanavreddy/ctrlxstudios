@@ -1,9 +1,24 @@
-
 'use client'
 import { useRef } from "react";
+import {AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function Footer() {
   
+  const contentVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    transition: { duration: 0.3, ease: "easeIn" },
+  },
+};
+
   return (
     <footer className="py-12 px-6 md:px-12 border-t border-gray-800 bg-transparent relative " >
       <div className="max-w-7xl mx-auto">
@@ -18,25 +33,47 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-medium mb-6">Resources</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">All Projects</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+              <li>
+                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                  About Us
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                  Services
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                  All Projects
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                  FAQs
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-xl font-medium mb-6">Contact Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2">Instagram</span>
                 <span>CtrlX</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2">Twitter</span>
                 <span>CtrlX</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
           </div>
@@ -46,9 +83,18 @@ export function Footer() {
           <p className="text-gray-400 mb-4 md:mb-0">CtrlXStudios@2025. All rights reserved.</p>
           
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Eleven</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Twelve</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Thirteen</a>
+            <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              Eleven
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              Twelve
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              Thirteen
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </div>
         </div>
       </div>
