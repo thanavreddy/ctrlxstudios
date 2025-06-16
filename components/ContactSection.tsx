@@ -46,7 +46,7 @@ export function ContactSection() {
           <div>
             
           <div
-  className="btn-anime relative overflow-hidden inline-block rounded-full border border-white text-white font-semibold text-sm py-3 px-6 cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-black mt-20 scale-110"
+  className="btn-anime relative overflow-hidden inline-block rounded-full border border-white text-white font-semibold text-sm py-3 px-6 cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-black mt-18 scale-110"
   onMouseMove={(e) => {
     const target = e.currentTarget as HTMLDivElement;
     const rect = target.getBoundingClientRect();

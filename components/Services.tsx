@@ -27,7 +27,13 @@ const Services = () => {
       title: "Brand Identity",
       displayTitle: { main: "Brand", separator: "", sub: "Identity" },
       description: "Build a cohesive and memorable brand presence that sets you apart. Our brand identity services encompass logo design, color schemes, typography, and brand guidelines to create a consistent and powerful brand experience."
-    }
+    },
+    {
+      title: "Web Development",
+      displayTitle: { main: "Web", separator: "", sub: "Development" },
+      description: "Bring your ideas to life with robust, scalable, and modern web solutions. Our web development team specializes in creating responsive websites and web applications that are fast, secure, and tailored to your business needs. From landing pages to complex platforms, we ensure seamless performance and a delightful user experience."
+    },
+
   ];
 
   const fadeInUpVariants = {
@@ -54,7 +60,7 @@ const Services = () => {
 };
 
   return (
-    <section ref={sectionRef} className="relative h-[1300px] scroll-mt-32 " id="services">
+    <section ref={sectionRef} className="relative h-[1300px] " id="services">
       <div className=" relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
         <div className=" absolute left-36 mt-26 ">
           <div className="mb-7">
