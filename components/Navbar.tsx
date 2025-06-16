@@ -26,7 +26,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { title: "Home", href: "#" },
+  { title: "Home", href: "#hero" },
   { title: "Services", href: "#services" },
   { title: "Works", href: "#works" },
   { title: "About", href: "#about" },
@@ -157,18 +157,26 @@ export default function Navbar() {
             animate="animate"
             exit="exit"
           >
-            <div className="flex flex-col items-center space-y-8">
-              {menuItems.map((item, index) => (
-                <motion.div key={index} variants={itemVariants}>
-                  <Link
-                    href={item.href}
-                    className="menu-item"
-                    onClick={closeMenu}
-                  >
-                    {item.title}
-                  </Link>
-                </motion.div>
-              ))}
+            <div className="flex flex-col items-center space-y-2">
+             {menuItems.map((item, index) => (
+  <motion.div key={index} variants={itemVariants}>
+    <button
+      className="menu-item hover:cursor-pointer"
+      onClick={() => {
+        closeMenu();
+        const el = document.getElementById(item.href.replace("#", ""));
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+          // update the URL without jumping
+          window.history.pushState(null, "", item.href);
+        }
+      }}
+    >
+      {item.title}
+    </button>
+  </motion.div>
+))}
+
             </div>
           </motion.div>
         )}

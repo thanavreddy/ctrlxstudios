@@ -36,7 +36,7 @@ export function ContactSection() {
     e.target.style.setProperty("--y", y + "px");
   };
   return (
-    <section className="relative bg-tranparent pt-24 px-6 md:px-12 mt-24">
+    <section className="relative bg-tranparent pt-24 px-6 md:px-12 mt-24" id="services">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 flex flex-col justify-between items-center">
           <h1 className="md:text-6xl text-5xl font-semibold font-[Poppins] text-center mb-2">

@@ -54,7 +54,7 @@ const Services = () => {
 };
 
   return (
-    <section ref={sectionRef} className="relative h-[1300px]">
+    <section ref={sectionRef} className="relative h-[1300px] scroll-mt-32 " id="services">
       <div className=" relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
         <div className=" absolute left-36 mt-26 ">
           <div className="mb-7">

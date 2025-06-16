@@ -7,7 +7,7 @@ import Image from "next/image";
 const Works = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   return (
-    <section className="relative h-[100vh] ">
+    <section className="relative h-[100vh] " id="works" ref ={sectionRef}>
       <div className="absolute left-36 mt-22 mb-6">
         <div className="mb-7">
           <p className="text-white text-2xl">Works</p>
