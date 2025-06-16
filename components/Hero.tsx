@@ -14,11 +14,11 @@ export default function HeroSection() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
-  const handleMouseMove = (e : MouseEvent) => {
+  const handleMouseMove = (e: MouseEvent) => {
     const x = e.pageX - e.target.offsetLeft;
     const y = e.pageY - e.target.offsetTop;
-    e.target.style.setProperty('--x', x + 'px');
-    e.target.style.setProperty('--y', y + 'px');
+    e.target.style.setProperty("--x", x + "px");
+    e.target.style.setProperty("--y", y + "px");
   };
 
   return (
@@ -49,7 +49,9 @@ export default function HeroSection() {
               className="flex items-center space-x-4 mt-2"
             >
               <span className="block w-12 h-[4px] bg-white"></span>
-              <span className="text-5xl md:text-6xl font-semibold">the unexpected</span>
+              <span className="text-5xl md:text-6xl font-semibold">
+                the unexpected
+              </span>
             </motion.div>
 
             <motion.p
@@ -64,19 +66,22 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-
           >
-            <div className="end hidden md:block absolute md:static " onMouseMove={handleMouseMove}>
-        <a href="/contact" className='btn contact_btn_new font-semibold text-white border-white border text-sm py-3 px-6 rounded-full cursor-pointer scale-110 '>
-          <span>
-            Contact Us
-          </span>
-        </a>
-      </div>
+            <div
+              className="end hidden md:block absolute md:static "
+              onMouseMove={handleMouseMove}
+            >
+              <a
+                href="/contact"
+                className="btn contact_btn_new_hero font-semibold text-white border-white border text-sm py-3 px-6 rounded-full cursor-pointer scale-110 "
+              >
+                <span>Contact Us</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
-{/* 
+      {/* 
       <motion.div 
         className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0, y: -20 }}
