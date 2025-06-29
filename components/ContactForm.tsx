@@ -47,12 +47,12 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 mt-7 max-w-6xl w-full px-4 md:px-0">
-                     <div className="mb-6 md:mb-10">
+    <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 mt-7 max-w-full md:max-w-6xl w-full px-2 sm:px-4 md:px-0">
+                     <div className="mb-4 md:mb-10">
               <p className="text-white text-lg md:text-xl">Personal Information</p>
               <span className="h-[1.5px] w-[42px] bg-white block"></span>
             </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full">
 
                   <div>
                     <label htmlFor="name" className="block text-lg md:text-xl font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
@@ -100,7 +100,7 @@ const ContactForm = () => {
                     placeholder=""
                   />
                 </div>
-                  <div className="mb-6 md:mb-10 mt-6 md:mt-10">
+                  <div className="mb-4 md:mb-10 mt-4 md:mt-10">
               <p className="text-white text-lg md:text-xl">Write to us</p>
               <span className="h-[1.5px] w-[42px] bg-white block"></span>
             </div>

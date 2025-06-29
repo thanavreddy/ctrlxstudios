@@ -24,9 +24,9 @@ const ContactPage = () => {
     // <div className="overflow-hidden">
     <section
       ref={sectionRef}
-      className="flex pt-50 items-center justify-center w-full text-white font-[Poppins] z-10 bg-transparent"
+      className="flex pt-50 md:pt-50 items-center justify-center w-full text-white font-[Poppins] z-10 bg-transparent"
     >
-      <div className="flex flex-col items-start justify-between w-full h-full px-6 md:px-16 py-1 mx-25 mb-52">
+      <div className="flex flex-col items-start justify-between w-full h-full px-6 sm:px-4 md:px-16 py-1 mx-0 md:mx-25 mb-20 md:mb-52">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -37,16 +37,16 @@ const ContactPage = () => {
               },
             },
           }}
-          className="max-w-5xl"
+          className="max-w-full md:max-w-5xl w-full"
         >
           <motion.h1
             variants={fadeInUpVariants}
-            className="text-5xl md:text-6xl font-semibold leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight"
           >
             Contact Us
           </motion.h1>
 
-          <motion.p variants={fadeInUpVariants} className="mt-8 text-[20px]">
+          <motion.p variants={fadeInUpVariants} className="mt-4 md:mt-8 text-lg md:text-[20px]">
             Ask us anything... we are here (well anything that concerns us ;)
           </motion.p>
         </motion.div>
