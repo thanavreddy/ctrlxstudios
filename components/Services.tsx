@@ -62,7 +62,7 @@ const Services = () => {
   return (
     <section ref={sectionRef} className="relative h-[1300px] " id="services">
       <div className=" relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
-        <div className=" absolute left-36 mt-26 ">
+        <div className=" absolute md:left-36 mt-26">
           <div className="mb-7">
             <p className="text-white text-2xl">Services</p>
             <span className="h-[2.5px] w-[42px] bg-white block"></span>
@@ -104,7 +104,7 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="w-96 left-[835px] top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
+          <div className="w-96 md:left-[835px] mt-36 top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedService}

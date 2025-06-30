@@ -1,10 +1,8 @@
-
 'use client'
 import { CheckCircle, Send } from 'lucide-react';
 import React, { useState } from 'react'
 
 const ContactForm = () => {
-
     const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,7 +11,6 @@ const ContactForm = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -123,7 +120,7 @@ const ContactForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting || isSubmitted}
-                  className={`w-full sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[20%] px-4 md:px-6 py-3 md:py-4 rounded-lg font-medium text-white transition-all duration-300 flex items-center justify-center text-sm md:text-base
+                  className={`w-full sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[20%] px-4 md:px-6 py-3 md:py-4 rounded-lg font-medium text-white transition-all duration-300 flex items-center justify-center text-sm md:text-base hover:cursor-pointer
                     ${isSubmitted 
                       ? 'bg-green-600 hover:bg-green-700' 
                       : 'bg-gradient-to-r from-blue-400 to-black hover:from-blue-400 hover:to-blue-200 shadow-lg hover:shadow-violet-500/25'
@@ -143,8 +140,8 @@ const ContactForm = () => {
                     </>
                   ) : (
                     <>
-                      <span className="hidden sm:inline">Request a Demo</span>
-                      <span className="sm:hidden">Submit</span>
+                      <span className="inline">Submit</span>
+                      {/* <span className="sm:hidden">Submit</span> */}
                       <Send className="w-4 h-4 md:w-5 md:h-5 ml-2" />
                     </>
                   )}
