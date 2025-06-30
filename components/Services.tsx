@@ -78,7 +78,7 @@ const Services = () => {
             }}
             initial="hidden"
             animate="visible"
-            className="text-5xl md:text-6xl text-white font-[Poppins] font-semibold w-auto mt-15"
+            className="text-4xl md:text-6xl text-white font-[Poppins] font-semibold w-auto mt-15"
           >
             <motion.h1 variants={fadeInUpVariants}>
               We Provide the best
@@ -104,7 +104,7 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="w-96 md:left-[835px] mt-36 top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
+          <div className="w-96 md:left-[835px] md:mt-36 mt-10 top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedService}
@@ -114,15 +114,15 @@ const Services = () => {
                 exit="exit"
                 className="w-56 h-12 justify-start"
               >
-                <span className="text-white text-3xl font-semibold font-['Poppins'] leading-9">
+                <span className="text-white text-2xl md:text-3xl font-semibold font-['Poppins'] leading-9">
                   {services[selectedService].displayTitle.main}
                 </span>
                 {services[selectedService].displayTitle.separator && (
-                  <span className="text-white text-2xl font-semibold font-['Poppins'] leading-loose">
+                  <span className="text-white text-2xl md:text-3xl font-semibold font-['Poppins'] leading-loose">
                     {services[selectedService].displayTitle.separator}
                   </span>
                 )}
-                <span className="text-white text-3xl font-semibold font-['Poppins'] leading-9">
+                <span className="text-white text-2xl md:text-3xl font-semibold font-['Poppins'] leading-9">
                   {services[selectedService].displayTitle.sub}
                 </span>
               </motion.div>
