@@ -104,7 +104,7 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="w-96 md:left-[835px] md:mt-36 mt-10 top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
+          <div className="w-96 md:left-[835px] md:mt-10 mt-10 top-[700px] absolute inline-flex flex-col justify-start items-start gap-2.5">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedService}

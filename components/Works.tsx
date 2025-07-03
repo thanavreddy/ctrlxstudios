@@ -28,39 +28,69 @@ const Works = () => {
       </div>
       <div className="absolute right-2  rounded-3xl backdrop-blur-md  bottom-2 w-[75%] h-[50%] flex items-center  ">
       <div className="w-full flex items-center space-x-4 h-[90%]  ">
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-evenly ">
-
-          <h1 className="text-2xl font-semibold font-[Poppins] mt-5">This Website</h1>
-          <Image src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={300} height={300} alt={""} />
-          <Link href='#' className="hover:underline-offset-8">Know More</Link>
-    
-
+        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-xl font-semibold font-[Poppins] text-white">UI/UX Design</h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-32 h-32 rounded-2xl overflow-hidden">
+              <Image 
+                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop&crop=center" 
+                width={128} 
+                height={128} 
+                alt="UI/UX Design" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+          <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View UI/UX Works →</Link>
         </div>
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-evenly ">
 
-          <h1 className="text-2xl font-semibold font-[Poppins] mt-5">Design of this website</h1>
-          <Image src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={300} height={300} alt={""} />
-          <Link href='#' className="hover:underline-offset-8 ">Know More</Link>
-    
-
+        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-xl font-semibold font-[Poppins] text-white">Video Editing</h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-32 h-32 rounded-2xl overflow-hidden">
+              <Image 
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=400&fit=crop&crop=center" 
+                width={128} 
+                height={128} 
+                alt="Video Editing" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+          <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Video Works →</Link>
         </div>
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-evenly ">
 
-          <h1 className="text-2xl font-semibold font-[Poppins] mt-5">Salaar 1 Year Special Video</h1>
-          <Image src="https://www.thestatesman.com/wp-content/uploads/2023/11/Salaar.jpg" width={300} height={300} alt={""} />
-          <Link href='#' className="hover:underline-offset-8">Know More</Link>
-    
-
+        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-xl font-semibold font-[Poppins] text-white">Graphic Design</h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-32 h-32 rounded-2xl overflow-hidden">
+              <Image 
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=400&fit=crop&crop=center" 
+                width={128} 
+                height={128} 
+                alt="Graphic Design" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+          <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Design Works →</Link>
         </div>
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-evenly ">
 
-          <h1 className="text-2xl font-semibold font-[Poppins] mt-5">New Clothing Brand</h1>
-          <Image src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={300} height={300} alt={""} />
-          <Link href='#' className="hover:underline-offset-8">Know More</Link>
-    
-
+        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-xl font-semibold font-[Poppins] text-white">Web Development</h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-32 h-32 rounded-2xl overflow-hidden">
+              <Image 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop&crop=center" 
+                width={128} 
+                height={128} 
+                alt="Web Development" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+          <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Dev Works →</Link>
         </div>
-        
       </div>
       </div>
     </section>

@@ -19,10 +19,17 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {protocol:'https',
+      {
+        protocol:'https',
         hostname:'www.thestatesman.com',
         port : '',
         pathname:'/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
       }
     ]
   }
