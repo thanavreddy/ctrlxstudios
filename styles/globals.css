@@ -3,24 +3,32 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
-
+  
+  /* Enhanced Color Palette */
+  --primary: #3B82F6;
+  --primary-dark: #1E40AF;
+  --accent: #8B5CF6;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --background: #0A0A0A;
+  --surface: #161616;
+  --muted: #6B7280;
 }
-
 
 html { 
   scroll-behavior: smooth;
 }
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   overflow-x: hidden;
-
 }
 
 @layer base {
- 
   body {
-    @apply bg-[background] text-[foreground];
+    background-color: #0A0A0A;
+    color: #FFFFFF;
   }
 }
 

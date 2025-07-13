@@ -28,8 +28,8 @@ const Works = () => {
       </div>
       <div className="absolute right-2  rounded-3xl backdrop-blur-md  bottom-2 w-[75%] h-[50%] flex items-center  ">
       <div className="w-full flex items-center space-x-4 h-[90%]  ">
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
-          <h1 className="text-xl font-semibold font-[Poppins] text-white">UI/UX Design</h1>
+        <div className=" w-[22%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-lg font-semibold font-[Poppins] text-white">UI/UX Design</h1>
           <div className="flex-1 flex items-center justify-center">
             <div className="w-32 h-32 rounded-2xl overflow-hidden">
               <Image 
@@ -41,11 +41,12 @@ const Works = () => {
               />
             </div>
           </div>
+          <p className="text-gray-400 text-sm mb-4">Modern, user-centered design solutions</p>
           <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View UI/UX Works →</Link>
         </div>
 
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
-          <h1 className="text-xl font-semibold font-[Poppins] text-white">Video Editing</h1>
+        <div className=" w-[22%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-lg font-semibold font-[Poppins] text-white">Video Editing</h1>
           <div className="flex-1 flex items-center justify-center">
             <div className="w-32 h-32 rounded-2xl overflow-hidden">
               <Image 
@@ -57,11 +58,12 @@ const Works = () => {
               />
             </div>
           </div>
+          <p className="text-gray-400 text-sm mb-4">Compelling visual storytelling</p>
           <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Video Works →</Link>
         </div>
 
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
-          <h1 className="text-xl font-semibold font-[Poppins] text-white">Graphic Design</h1>
+        <div className=" w-[22%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-lg font-semibold font-[Poppins] text-white">Graphic Design</h1>
           <div className="flex-1 flex items-center justify-center">
             <div className="w-32 h-32 rounded-2xl overflow-hidden">
               <Image 
@@ -73,11 +75,12 @@ const Works = () => {
               />
             </div>
           </div>
+          <p className="text-gray-400 text-sm mb-4">Stunning visual communications</p>
           <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Design Works →</Link>
         </div>
 
-        <div className=" w-[30%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
-          <h1 className="text-xl font-semibold font-[Poppins] text-white">Web Development</h1>
+        <div className=" w-[22%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-lg font-semibold font-[Poppins] text-white">Web Development</h1>
           <div className="flex-1 flex items-center justify-center">
             <div className="w-32 h-32 rounded-2xl overflow-hidden">
               <Image 
@@ -89,7 +92,25 @@ const Works = () => {
               />
             </div>
           </div>
+          <p className="text-gray-400 text-sm mb-4">Robust, scalable web solutions</p>
           <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Dev Works →</Link>
+        </div>
+
+        <div className=" w-[22%]  rounded-3xl m-3 border-white border-1   min-h-full flex flex-col items-center text-center justify-between p-6 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 ">
+          <h1 className="text-lg font-semibold font-[Poppins] text-white">Brand Identity</h1>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-32 h-32 rounded-2xl overflow-hidden">
+              <Image 
+                src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=400&fit=crop&crop=center" 
+                width={128} 
+                height={128} 
+                alt="Brand Identity" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm mb-4">Cohesive brand experiences</p>
+          <Link href='#' className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-medium">View Brand Works →</Link>
         </div>
       </div>
       </div>

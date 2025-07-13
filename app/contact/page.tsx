@@ -2,9 +2,13 @@
 import Element3D from "@/components/3D";
 import ContactForm from "@/components/ContactForm";
 import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 import { div } from "three/src/nodes/TSL.js";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 const ContactPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -19,9 +23,34 @@ const ContactPage = () => {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   return (
     // <div className="overflow-hidden">
+    <>
+    <header
+        className={cn(
+          "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-10 py-14 self-stretch",
+          scrolled ? "bg-transparent" : "bg-transparent"
+        )}
+      >
+        <nav className="flex items-center justify-between  mx-auto">
+          <div className="my-logo">
+          <Link
+            href="/"
+            className="text-4xl md:text-4xl  self-stretch  z-50 font-[Poppins] font-semibold"
+
+          >
+            CtrlX
+          </Link>
+          </div>
+
+        </nav>
+      </header>
+
+      
+    
     <section
       ref={sectionRef}
       className="flex pt-50 md:pt-50 items-center justify-center w-full text-white font-[Poppins] z-10 bg-transparent"
@@ -84,7 +113,7 @@ const ContactPage = () => {
         <ContactForm/>
       </div>
     </section>
-    // </div>
+    </>
   );
 };
 

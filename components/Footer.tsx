@@ -83,18 +83,18 @@ export function Footer() {
           <p className="text-gray-400 mb-4 md:mb-0">CtrlXStudios@2025. All rights reserved.</p>
           
           <div className="flex space-x-6">
-            <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
-              Eleven
+            <a href="httpthanav-portfolio.vercel.app" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              Founder
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+            {/* <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
               Twelve
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
               Thirteen
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export default function RootLayout({
     <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
     <Element3D />
   </div>
-      <Navbar/>
+      {/* <Navbar/> */}
         {children}
         <Footer/>
       </body>
