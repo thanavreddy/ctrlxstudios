@@ -123,7 +123,7 @@ const ContactForm = () => {
                   className={`w-full sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[20%] px-4 md:px-6 py-3 md:py-4 rounded-lg font-medium text-white transition-all duration-300 flex items-center justify-center text-sm md:text-base hover:cursor-pointer
                     ${isSubmitted 
                       ? 'bg-green-600 hover:bg-green-700' 
-                      : 'bg-gradient-to-r from-blue-400 to-black hover:from-blue-400 hover:to-blue-200 shadow-lg hover:shadow-violet-500/25'
+                      : 'bg-gradient-to-r from-blue-400 to-black hover:from-black hover:to-blue-400 shadow-lg hover:shadow-blue-500/30'
                     } transform hover:scale-[1.02]`}
                 >
                   {isSubmitting ? (

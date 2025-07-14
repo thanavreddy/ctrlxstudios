@@ -2,39 +2,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
-
+import { services } from "@/constants";
 const Services = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [selectedService, setSelectedService] = useState(0);
 
-  const services = [
-    {
-      title: "UI/UX Design",
-      displayTitle: { main: "UI", separator: "/", sub: "UX Design" },
-      description: "We craft digital experiences that resonates with users. Our strategic approach to UI/UX Design ensures seamless user interaction and satisfaction. From intuitive interface to engaging experiences, we prioritize design that not only looks great but works brilliantly."
-    },
-    {
-      title: "Video Editing",
-      displayTitle: { main: "Video", separator: "", sub: "Editing" },
-      description: "Transform your raw footage into compelling visual stories. Our video editing services combine technical expertise with creative vision to produce engaging content that captures attention and delivers your message effectively across all platforms."
-    },
-    {
-      title: "Graphic Design",
-      displayTitle: { main: "Graphic", separator: "", sub: "Design" },
-      description: "Create stunning visual communications that make lasting impressions. From logos to marketing materials, our graphic design services help establish your brand identity and communicate your message with impact and professionalism."
-    },
-    {
-      title: "Brand Identity",
-      displayTitle: { main: "Brand", separator: "", sub: "Identity" },
-      description: "Build a cohesive and memorable brand presence that sets you apart. Our brand identity services encompass logo design, color schemes, typography, and brand guidelines to create a consistent and powerful brand experience."
-    },
-    {
-      title: "Web Development",
-      displayTitle: { main: "Web", separator: "", sub: "Development" },
-      description: "Bring your ideas to life with robust, scalable, and modern web solutions. Our web development team specializes in creating responsive websites and web applications that are fast, secure, and tailored to your business needs. From landing pages to complex platforms, we ensure seamless performance and a delightful user experience."
-    },
-
-  ];
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -61,9 +33,9 @@ const Services = () => {
 
   return (
     <section ref={sectionRef} className="relative h-[1300px] " id="services">
-      <div className=" relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
-        <div className=" absolute md:left-36 mt-26">
-          <div className="mb-7">
+      <div className="relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
+        <div className="absolute md:left-36 mt-26">
+          <div className=" mb-4 md:mb-7">
             <p className="text-white text-2xl">Services</p>
             <span className="h-[2.5px] w-[42px] bg-white block"></span>
           </div>

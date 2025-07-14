@@ -152,13 +152,13 @@ const Pricing = () => {
                 transition={{ delay: index * 0.2 }}
                 className={`relative p-8 rounded-2xl border ${
                   plan.popular
-                    ? "border-purple-500 bg-purple-500/10"
+                    ? "bg-blue-700/10 border border-blue-400/20"
                     : "border-gray-700 bg-white/5"
                 } backdrop-blur-sm hover:border-blue-400 transition-all duration-300 group`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center">
+                    <span className="bg-gradient-to-r from-blue-700/10 to-blue-300/30 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center">
                       <Star className="w-4 h-4 mr-1" />
                       Most Popular
                     </span>
@@ -217,7 +217,7 @@ const Pricing = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="p-6 rounded-xl border border-gray-700 bg-white/5 backdrop-blur-sm hover:border-blue-400 transition-all duration-300 group"
+                className="p-6 rounded-xl border border-gray-700/50 bg-white/5 backdrop-blur-sm  transition-all duration-300 group"
               >
                 <div className="mb-6">
                   <h4 className="text-xl font-semibold text-white mb-2 font-[Poppins]">
@@ -237,9 +237,15 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                <button className="w-full py-2 rounded-lg border border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white transition-all duration-300 group-hover:scale-105">
+                {/* <button className="w-full py-2 rounded-lg border border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white transition-all duration-300 group-hover:scale-105">
                   Learn More
-                </button>
+                </button> */}
+                <button className="btn-17 z-10">
+  <span className="text-container">
+    <span className="text">Get Quote</span>
+  </span>
+</button>
+
               </motion.div>
             ))}
           </div>
@@ -251,7 +257,7 @@ const Pricing = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUpVariants}
-          className="text-center mt-16 p-8 rounded-2xl bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30"
+          className="text-center mt-16 p-8 rounded-2xl bg-gradient-to-r from-blue-600/10 to-blue-700/30 border border-blue-400/20"
         >
           <h3 className="text-2xl font-semibold text-white mb-4 font-[Poppins]">
             Need a Custom Solution?

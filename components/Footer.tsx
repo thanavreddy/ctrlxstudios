@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-medium mb-6">Resources</h3>
+            <h3 className="text-xl font-medium mb-6 text-blue-300">Resources</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
@@ -40,14 +40,14 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                <a href="#services" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                   Services
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
               <li>
-                <a href="#" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
-                  All Projects
+                <a href="#works" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+                  Works
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-medium mb-6">Contact Us</h3>
+            <h3 className="text-xl font-medium mb-6 text-blue-300">Contact Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2">Instagram</span>
@@ -83,7 +83,7 @@ export function Footer() {
           <p className="text-gray-400 mb-4 md:mb-0">CtrlXStudios@2025. All rights reserved.</p>
           
           <div className="flex space-x-6">
-            <a href="httpthanav-portfolio.vercel.app" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+            <a href="https://thanav-portfolio.vercel.app" className="relative overflow-hidden text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
               Founder
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
             </a>
