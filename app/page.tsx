@@ -18,7 +18,6 @@ export default function Home() {
       <Works/>
       <Pricing/>
       <ContactSection/>
-      {/* <Footer/> */}
     </div>
  
   );

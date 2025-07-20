@@ -29,7 +29,7 @@ function Model({ scrollY }: { scrollY: number }) {
       floatIntensity={0.5}
     >
       <mesh ref={meshRef}>
-        <octahedronGeometry args={[2, 0]}  />
+        <octahedronGeometry args={[2,0]}  />
         <meshStandardMaterial 
           color="#8ec5ff" 
           metalness={0.001} 
@@ -47,7 +47,7 @@ export default function Element3D() {
   const { scrollY } = useScroll();
 
   return (
-    <div className="canvas-container">
+    <div className="canvas-container --background-rgb">
       <Canvas camera={{ position: [0, 0, 10], fov: 45 }}>
         <ambientLight intensity={0.8} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />

@@ -3,6 +3,8 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
+  /* --foreground-rgb :0,0,0;
+  --background-rgb: 255, 255, 255; */
 
   /* Enhanced Color Palette */
   --primary: #3b82f6;
