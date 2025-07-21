@@ -23,13 +23,13 @@ const Works = () => {
       id="works"
       ref={sectionRef}
     >
-      <div className="relative z-10 h-full text-white font-[Poppins] px-6 md:px-16 py-16 mt-[-63]">
+      <div className="relative z-10 h-full text-white font-[Poppins] px-6 md:mt-[-35] mt-28 md:px-16 py-16 ">
         <div className="max-w-7xl mx-auto md:left-36 md:pl-5 ">
           {/* Header Section */}
           <div className="mb-12 md:mb-20">
             <div className=" md:left-36 mb-4 md:mb-7">
-              <p className="text-white text-xl md:text-2xl">Works</p>
-              <span className="h-[2.5px] w-[42px] bg-white block"></span>
+              <p className="text-blue-300 text-xl md:text-2xl">Works</p>
+              <span className="h-[2.5px] w-[42px] bg-blue-300 block"></span>
             </div>
             <motion.div
               initial="hidden"
@@ -70,7 +70,7 @@ const Works = () => {
             </div>
           </motion.div>
 
-          {/* Service Domains Section */}
+          {/* Service Domains Section
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -166,7 +166,7 @@ const Works = () => {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* CTA Section */}
           <motion.div

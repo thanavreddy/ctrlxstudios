@@ -40,8 +40,8 @@ const Services = () => {
         <div className="max-w-7xl mx-auto md:left-36 md:pl-5 flex flex-col ">
           <div className="mb-9 md:mb-10">
             <div className=" md:left-36 mb-4 md:mb-7">
-              <p className="text-white text-xl md:text-2xl">Services</p>
-              <span className="h-[2.5px] w-[42px] bg-white block"></span>
+              <p className="text-blue-300 text-xl md:text-2xl">Services</p>
+              <span className="h-[2.5px] w-[42px] bg-blue-300 block"></span>
             </div>
             <motion.div
               initial="hidden"

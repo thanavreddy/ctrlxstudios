@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 const Pricing = () => {
   const fadeInUpVariants = {
@@ -107,7 +108,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12" id="pricing">
+    <section className="py-14 px-6 md:px-12" id="pricing">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -154,7 +155,7 @@ const Pricing = () => {
                   plan.popular
                     ? "bg-blue-700/10 border border-blue-400/20"
                     : "border-gray-700 bg-white/5"
-                } backdrop-blur-sm hover:border-blue-400 transition-all duration-300 group`}
+                } backdrop-blur-sm  transition-all duration-300 group`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -185,15 +186,17 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                <button
-                  className={`w-full py-3 rounded-lg font-medium transition-all duration-300 group-hover:scale-105 ${
+                <Link
+                  className={`w-full inline-flex py-3  items-center  justify-center rounded-lg font-medium transition-all duration-300 hover:cursor-pointer ${
                     plan.popular
-                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                      : "bg-blue-600 hover:bg-blue-700 text-white"
+                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white "
+                      : "bg-blue-600 hover:bg-blue-700 text-white "
                   }`}
+                  // onClick={()=> redirect('/contact')} 
+                  href="/contact"
                 >
                   {plan.cta}
-                </button>
+                </Link>
               </motion.div>
             ))}
           </div>
