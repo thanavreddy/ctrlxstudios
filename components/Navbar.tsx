@@ -81,7 +81,7 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-10 py-14 self-stretch",
+          "top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-10 py-14 self-stretch",
           scrolled ? "bg-transparent" : "bg-transparent"
         )}
       >

@@ -2,9 +2,11 @@
 import { useEffect, useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -22,7 +24,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section ref={sectionRef} className="relative h-[100vh]" id="hero">
+    <section ref={sectionRef} className="relative h-[80vh]" id="hero">
       <div className="relative z-10 h-full text-[--foreground-rgb] font-[Poppins] px-6 md:px-16 pb-12 flex items-end">
         <div className="flex-col items-end">
           <motion.div
