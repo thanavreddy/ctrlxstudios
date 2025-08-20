@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import WorkCard from "./WorkCard";
 import { portfolioProjects } from "@/constants";
+import NewWorkCard from "./NewWorkCard";
 
 const Works = () => {
   const fadeInUpVariants = {
@@ -67,6 +68,8 @@ const Works = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
               <WorkCard project={portfolioProjects[0]} index={0} />
               <WorkCard project={portfolioProjects[1]} index={1} />
+              <NewWorkCard/>
+              
             </div>
           </motion.div>
 
@@ -186,13 +189,13 @@ const Works = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center px-8 py-3 bg-blue-400 hover:bg-transparent text-black hover:text-white rounded-lg font-medium transition-all duration-300 "
               >
                 Get Free Quote
               </Link>
               <Link
                 href="#portfolio"
-                className="inline-flex items-center px-8 py-3 border border-gray-600 hover:border-blue-400 text-white rounded-lg font-medium transition-all duration-300 hover:bg-white/5"
+                className="inline-flex items-center px-8 py-3  hover:border-blue-400  rounded-lg font-medium transition-all duration-300 hover:bg-blue-400 text-white hover:text-black "
               >
                 View All Projects
               </Link>

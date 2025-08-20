@@ -39,7 +39,7 @@ const WorkCard = ({ project, index }: WorkCardComponentProps) => {
         />
       </div>
       
-      <div className="p-6">
+      <div className="p-6 ">
         <div className="flex items-center justify-between mb-3">
           <span className="text-blue-400 text-sm font-medium">
             {project.category}

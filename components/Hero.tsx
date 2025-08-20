@@ -16,13 +16,6 @@ export default function HeroSection() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
-  const handleMouseMove = (e: MouseEvent) => {
-    const x = e.pageX - e.target.offsetLeft;
-    const y = e.pageY - e.target.offsetTop;
-    e.target.style.setProperty("--x", x + "px");
-    e.target.style.setProperty("--y", y + "px");
-  };
-
   return (
     <section ref={sectionRef} className="relative h-[80vh]" id="hero">
       <div className="relative z-10 h-full text-[--foreground-rgb] font-[Poppins] px-6 md:px-16 pb-12 flex items-end">
@@ -69,14 +62,36 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            <div
-              className="end hidden md:block absolute md:static "
-              onMouseMove={handleMouseMove}
+            {/* <div
+              className=" btn-anime end hidden md:block absolute md:static "
+              onMouseMove={(e) => {
+                const target = e.currentTarget as HTMLDivElement;
+                const rect = target.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                target.style.setProperty("--x", `${x}px`);
+                target.style.setProperty("--y", `${y}px`);
+              }}
             >
               <a
                 href="/contact"
-                className="btn contact_btn_new_hero font-semibold text-white border-white border text-sm py-3 px-6 rounded-full cursor-pointer scale-110 "
+                  className="contact_btn_new_hero font-semibold text-white border-white border text-sm py-3 px-6 rounded-full cursor-pointer scale-110 "
               >
+                <span>Contact Us</span>
+              </a>
+            </div> */}
+            <div
+              className="btn-anime contact_btn_new_hero rounded-full hidden md:block overflow-hidden border border-white text-white font-semibold text-sm py-2 md:py-3 px-4 md:px-6 cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-black mt-6 md:mt-18 scale-105 md:scale-110"
+              onMouseMove={(e) => {
+                const target = e.currentTarget as HTMLDivElement;
+                const rect = target.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                target.style.setProperty("--x", `${x}px`);
+                target.style.setProperty("--y", `${y}px`);
+              }}
+            >
+              <a href="/contact" className="relative z-10 text-sm mb:1">
                 <span>Contact Us</span>
               </a>
             </div>

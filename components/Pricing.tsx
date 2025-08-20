@@ -189,8 +189,8 @@ const Pricing = () => {
                 <Link
                   className={`w-full inline-flex py-3  items-center  justify-center rounded-lg font-medium transition-all duration-300 hover:cursor-pointer ${
                     plan.popular
-                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white "
-                      : "bg-blue-600 hover:bg-blue-700 text-white "
+                      ? "bg-gradient-to-r from-blue-700 to-blue-300 text-black"
+                      : "bg-blue-400 text-black "
                   }`}
                   // onClick={()=> redirect('/contact')} 
                   href="/contact"
