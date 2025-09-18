@@ -65,11 +65,12 @@ const Works = () => {
             <h3 className="text-xl md:text-3xl font-semibold text-white mb-8 md:mb-12 text-center font-[Poppins]">
               Featured Projects
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-              <WorkCard project={portfolioProjects[0]} index={0} />
-              <WorkCard project={portfolioProjects[1]} index={1} />
-              <NewWorkCard/>
-              
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-9 gap-x-6">
+              {/* <WorkCard project={portfolioProjects[0]} index={0} /> */}
+              {/* <WorkCard project={portfolioProjects[1]} index={1} /> */}
+              <NewWorkCard {...portfolioProjects[0]} />
+              <NewWorkCard {...portfolioProjects[1]} />
+              {/* <NewWorkCard {...portfolioProjects[0]} /> */}
             </div>
           </motion.div>
 

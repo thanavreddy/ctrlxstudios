@@ -1,44 +1,23 @@
+import { alphaT } from "three/src/nodes/TSL.js";
+
 export const portfolioProjects = [
-    {
+     {
         id: 1,
-        title: "E-Commerce Platform Redesign",
-        category: "Web Development",
-        client: "Fashion Retailer",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-        description: "Complete redesign and development of an e-commerce platform with improved UX and 40% conversion increase.",
-        technologies: ["React", "Node.js", "Stripe"],
-        results: "40% increase in conversions"
+        title : "Protiq",
+        category : ['UI/UX','Brand Design'],
+        image:"/protiq.png",
+        link:"https://www.behance.net/gallery/233387521/Protiq-Rebranding-for-a-Protein-Intelligence-Platform",
+        altText : 'Protiq'
     },
     {
-        id: 2,
-        title: "SaaS Dashboard Design",
-        category: "UI/UX Design",
-        client: "Tech Startup",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-        description: "Modern dashboard design for analytics platform with focus on data visualization and user experience.",
-        technologies: ["Figma", "Prototyping", "User Research"],
-        results: "25% improvement in user engagement"
-    },
-    {
-        id: 3,
-        title: "Brand Identity & Website",
-        category: "Branding",
-        client: "Local Restaurant",
-        image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop",
-        description: "Complete brand identity design including logo, guidelines, and responsive website development.",
-        technologies: ["Adobe Creative Suite", "WordPress"],
-        results: "300% increase in online orders"
-    },
-    {
-        id: 4,
-        title: "Mobile App UI Design",
-        category: "Mobile Design",
-        client: "Fitness App",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-        description: "Complete mobile app UI/UX design for fitness tracking application with social features.",
-        technologies: ["Sketch", "Principle", "InVision"],
-        results: "4.8★ App Store rating"
+        id : 2,
+        title : "Whisper walls",
+        category : ['landing page',"web design"],
+        image : "/wwl.png",
+        link : "https://www.behance.net/gallery/234909713/Whisper-WallsLanding-Page",
+        altText : 'Whisper Walls'
     }
+   
 ];
 
 export const services = [
