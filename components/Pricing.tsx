@@ -20,18 +20,21 @@ const Pricing = () => {
       name: "Startup",
       price: "$2,499",
       period: "one-time",
-      description: "Perfect for new businesses looking to establish their digital presence",
+      description:
+        "Perfect for new businesses looking to establish their digital presence",
       features: [
         "Logo Design & Brand Guidelines",
         "5-Page Website Design",
         "Mobile Responsive Design",
         "Basic SEO Optimization",
         "2 Rounds of Revisions",
-        "1 Month Support"
+        "1 Month Support",
+        "Strong Brand Identity"
       ],
       popular: false,
       cta: "Get Started",
-      color: "blue"
+      x : "Connect on X",
+      color: "blue",
     },
     {
       name: "Growth",
@@ -45,11 +48,12 @@ const Pricing = () => {
         "Advanced SEO Optimization",
         "E-commerce Integration",
         "3 Months Support",
-        "Content Management Training"
+        "Content Management Training",
       ],
       popular: true,
       cta: "Most Popular",
-      color: "purple"
+      x : "Connect on X",
+      color: "purple",
     },
     {
       name: "Enterprise",
@@ -63,48 +67,49 @@ const Pricing = () => {
         "Advanced Analytics Setup",
         "Multi-language Support",
         "6 Months Support",
-        "Priority Support & Updates"
+        "Priority Support & Updates",
       ],
       popular: false,
       cta: "Contact Us",
-      color: "green"
-    }
+      x : "Connect on X",
+      color: "green",
+    },
   ];
 
   const developmentServices = [
     {
       name: "Landing Page",
-      price: "$1,999",
+      price: "Starting at $499",
       features: [
         "Responsive Design (Desktop/Tablet/Mobile)",
         "Contact Forms & Lead Capture",
         "SEO Optimization",
         "Performance Optimization",
-        "2-Week Delivery"
-      ]
+        "2-Week Delivery",
+      ],
     },
     {
       name: "Multi-Page Website",
-      price: "$4,999",
+      price: "Starting at $1199",
       features: [
         "Up to 10 Custom Pages",
         "CMS Integration",
         "E-commerce Ready",
         "Advanced Animations",
-        "4-Week Delivery"
-      ]
+        "4-Week Delivery",
+      ],
     },
     {
       name: "Custom Web App",
-      price: "Starting at $9,999",
+      price: "Starting at $2499",
       features: [
         "Custom Functionality",
         "Database Integration",
         "User Authentication",
         "Admin Dashboard",
-        "8-12 Week Delivery"
-      ]
-    }
+        "8-12 Week Delivery",
+      ],
+    },
   ];
 
   return (
@@ -128,7 +133,8 @@ const Pricing = () => {
             Every Business Need
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Choose the perfect plan that fits your budget and requirements. No hidden fees, no surprises.
+            Choose the perfect plan that fits your budget and requirements. No
+            hidden fees, no surprises.
           </p>
         </motion.div>
 
@@ -151,7 +157,7 @@ const Pricing = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className={`relative p-8 rounded-2xl border ${
+                className={`relative p-8 rounded-3xl border ${
                   plan.popular
                     ? "bg-blue-700/10 border border-blue-400/20"
                     : "border-gray-700 bg-white/5"
@@ -170,9 +176,13 @@ const Pricing = () => {
                   <h4 className="text-2xl font-semibold text-white mb-2 font-[Poppins]">
                     {plan.name}
                   </h4>
-                  <p className="text-gray-400 text-sm mb-4">{plan.description}</p>
+                  <p className="text-gray-400 text-sm mb-4">
+                    {plan.description}
+                  </p>
                   <div className="flex items-baseline">
-                    <span className="text-4xl font-bold text-white">{plan.price}</span>
+                    <span className="text-4xl font-bold text-white">
+                      {plan.price}
+                    </span>
                     <span className="text-gray-400 ml-2">/{plan.period}</span>
                   </div>
                 </div>
@@ -185,18 +195,20 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-
+                <div className=" w-full gap-2 flex  items-center justify-between">
                 <Link
-                  className={`w-full inline-flex py-3  items-center  justify-center rounded-lg font-medium transition-all duration-300 hover:cursor-pointer ${
-                    plan.popular
-                      ? "bg-gradient-to-r from-blue-700 to-blue-300 text-black"
-                      : "bg-blue-400 text-black "
-                  }`}
-                  // onClick={()=> redirect('/contact')} 
+                  className="w-full inline-flex py-3  items-center  justify-center rounded-full font-semibold transition-all duration-300 hover:cursor-pointer  bg-blue-300 text-black"
                   href="/contact"
                 >
                   {plan.cta}
                 </Link>
+                <Link
+                  className="w-full inline-flex py-3  items-center  justify-center rounded-full font-semibold transition-all duration-300 hover:cursor-pointer border-[1.5px] border-blue-300 text-blue-300"
+                  href="https:x.com/thanavR"
+                >
+                  {plan.x}
+                </Link>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -227,7 +239,9 @@ const Pricing = () => {
                     {service.name}
                   </h4>
                   <div className="flex items-baseline">
-                    <span className="text-2xl font-bold text-blue-300">{service.price}</span>
+                    <span className="text-2xl font-bold text-blue-300">
+                      {service.price}
+                    </span>
                   </div>
                 </div>
 
@@ -243,12 +257,16 @@ const Pricing = () => {
                 {/* <button className="w-full py-2 rounded-lg border border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white transition-all duration-300 group-hover:scale-105">
                   Learn More
                 </button> */}
-                <button className="btn-17 z-10">
-  <span className="text-container">
-    <span className="text">Get Quote</span>
-  </span>
-</button>
 
+                
+          
+                
+                <button className="btn-17 z-10 rounded-full font-semibold">
+                  <span className="text-container">
+                    <span className="text font-semibold">Get Quote</span>
+                  </span>
+                </button>
+        
               </motion.div>
             ))}
           </div>
@@ -266,11 +284,12 @@ const Pricing = () => {
             Need a Custom Solution?
           </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Every project is unique. Let's discuss your specific requirements and create a tailored solution that fits your needs perfectly.
+            Every project is unique. Let's discuss your specific requirements
+            and create a tailored solution that fits your needs perfectly.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 group"
+            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3 rounded-full font-medium hover:from-blue-700 hover:to-blue-950 transition-all duration-300 group"
           >
             Get Custom Quote
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />

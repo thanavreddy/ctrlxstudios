@@ -319,7 +319,7 @@ body {
 
 /* pricing buttons */
 .btn-17 {
-  @apply relative overflow-hidden w-full rounded-full  bg-blue-400 px-12 py-3 font-bold uppercase text-white transition-all;
+  @apply relative overflow-hidden w-full rounded-2xl  bg-blue-400 px-12 py-3 font-bold uppercase text-white transition-all;
 }
 
 .btn-17:hover {

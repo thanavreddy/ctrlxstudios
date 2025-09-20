@@ -78,7 +78,7 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="w-96  md:mt-10 mt-8 top-[700px] absolute inline-flex flex-col justify-start items-start self-end  gap-2.5">
+          <div className="w-full sm:w-96 md:mt-10 mt-8 sm:top-[700px] sm:absolute inline-flex flex-col justify-start items-start self-end gap-2.5 px-2 sm:px-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedService}
@@ -109,7 +109,7 @@ const Services = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="w-96 h-60 self-end  right-6 md:right-16 text-white text-xl font-medium font-['Poppins'] leading-relaxed"
+                className="w-full h-60 self-end  right-6 md:right-16 text-white text-l md:text-xl font-medium font-['Poppins'] leading-relaxed"
               >
                 {services[selectedService].description}
               </motion.div>

@@ -71,7 +71,7 @@ export function Footer() {
             </div>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
-                <span className="mr-2">Twitter</span>
+                <span className="mr-2">X</span>
                 <span>CtrlX</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
               </a>
