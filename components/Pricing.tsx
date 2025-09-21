@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import { Check, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const Pricing = () => {
+  const router  = useRouter();
+
+
+  // Removed incorrect Router instantiation
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -204,7 +209,7 @@ const Pricing = () => {
                 </Link>
                 <Link
                   className="w-full inline-flex py-3  items-center  justify-center rounded-full font-semibold transition-all duration-300 hover:cursor-pointer border-[1.5px] border-blue-300 text-blue-300"
-                  href="https:x.com/thanavR"
+                  href="https://www.x.com/thanavR"
                 >
                   {plan.x}
                 </Link>
@@ -261,7 +266,7 @@ const Pricing = () => {
                 
           
                 
-                <button className="btn-17 z-10 rounded-full font-semibold">
+                <button className="btn-17 z-10 rounded-full font-semibold" onClick={()=>(router.push('/contact'))}>
                   <span className="text-container">
                     <span className="text font-semibold">Get Quote</span>
                   </span>
