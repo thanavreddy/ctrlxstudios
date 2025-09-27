@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CtrlX Studios",
   description: "CtrlX Studios - Create the unexpected",
+  icons : "/logo%20svg.svg"
 };
 
 export default function RootLayout({
