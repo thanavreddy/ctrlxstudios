@@ -25,7 +25,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="mb-6 space-y-2">
-              <p className="text-xl">contact@ctrlx.com</p>
+              <p className="text-xl">ctrlxstudioss@gmail.com</p>
               <p className="text-xl italiano">+91 9652804722</p>
             </div>
           </div>
@@ -70,9 +70,9 @@ export function Footer() {
               </a>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              <a href="https://x.com/ctrlx_studios" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2">X</span>
-                <span>CtrlX</span>
+                <span>ctrlx_studios</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>

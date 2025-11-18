@@ -1,23 +1,39 @@
 import { alphaT } from "three/src/nodes/TSL.js";
 
 export const portfolioProjects = [
-     {
+    {
         id: 1,
-        title : "Protiq",
-        category : ['UI/UX','Brand Design'],
-        image:"/protiq.png",
-        link:"https://www.behance.net/gallery/233387521/Protiq-Rebranding-for-a-Protein-Intelligence-Platform",
-        altText : 'Protiq'
+        title: "Protiq",
+        category: ['UI/UX', 'Brand Design'],
+        image: "/protiq.png",
+        link: "https://www.behance.net/gallery/233387521/Protiq-Rebranding-for-a-Protein-Intelligence-Platform",
+        altText: 'Protiq'
     },
     {
-        id : 2,
-        title : "Whisper walls",
-        category : ['landing page',"web design"],
-        image : "/wwl.png",
-        link : "https://www.behance.net/gallery/234909713/Whisper-WallsLanding-Page",
-        altText : 'Whisper Walls'
+        id: 2,
+        title: "Whisper walls",
+        category: ['landing page', "web design"],
+        image: "/wwl.png",
+        link: "https://www.behance.net/gallery/234909713/Whisper-WallsLanding-Page",
+        altText: 'Whisper Walls'
+    },
+    {
+        id: 3,
+        title: "Brutalism Posters",
+        category: ['graphic design', 'brutalism'],
+        image: "/bru-thumb.png",
+        link: "https://www.behance.net/gallery/237264399/posters-vol-1(brutalism)",
+        altText: "Brutalism Posters"
+    },
+    {
+        id: 4,
+        title: "Posters for Film CLub",
+        category: ["social media", "graphic design"],
+        image: "/cover-page-chaaya.png",
+        link: "https://www.behance.net/gallery/237264399/posters-vol-1(brutalism)",
+        altText: "Posters for Film Club"
     }
-   
+
 ];
 
 export const services = [

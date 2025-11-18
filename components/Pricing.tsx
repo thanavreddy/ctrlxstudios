@@ -129,16 +129,16 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <div className="mb-4">
-            <p className="text-blue-300 text-lg font-medium">Pricing</p>
+            <p className="text-blue-300 text-lg font-medium">Packages</p>
             <span className="h-[2px] w-12 bg-blue-300 block mx-auto mt-2"></span>
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 font-[Poppins]">
-            Transparent Pricing for
+            Transparent Packages for
             <br />
             Every Business Need
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Choose the perfect plan that fits your budget and requirements. No
+            Choose the perfect pack that fits your budget and requirements. No
             hidden fees, no surprises.
           </p>
         </motion.div>
@@ -184,12 +184,12 @@ const Pricing = () => {
                   <p className="text-gray-400 text-sm mb-4">
                     {plan.description}
                   </p>
-                  <div className="flex items-baseline">
+                  {/* <div className="flex items-baseline">
                     <span className="text-4xl font-bold text-white">
                       {plan.price}
                     </span>
                     <span className="text-gray-400 ml-2">/{plan.period}</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -243,11 +243,11 @@ const Pricing = () => {
                   <h4 className="text-xl font-semibold text-white mb-2 font-[Poppins]">
                     {service.name}
                   </h4>
-                  <div className="flex items-baseline">
+                  {/* <div className="flex items-baseline">
                     <span className="text-2xl font-bold text-blue-300">
                       {service.price}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <ul className="space-y-3 mb-6">

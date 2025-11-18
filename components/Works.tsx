@@ -70,7 +70,9 @@ const Works = () => {
               {/* <WorkCard project={portfolioProjects[1]} index={1} /> */}
               <NewWorkCard {...portfolioProjects[0]} />
               <NewWorkCard {...portfolioProjects[1]} />
-              {/* <NewWorkCard {...portfolioProjects[0]} /> */}
+              <NewWorkCard {...portfolioProjects[2]}/>
+
+              <NewWorkCard {...portfolioProjects[3]}/>
             </div>
           </motion.div>
 
