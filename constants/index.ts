@@ -30,7 +30,7 @@ export const portfolioProjects = [
         title: "Posters for Film CLub",
         category: ["social media", "graphic design"],
         image: "/cover-page-chaaya.png",
-        link: "https://www.behance.net/gallery/237264399/posters-vol-1(brutalism)",
+        link: "https://www.behance.net/gallery/237385117/posters-vol2(chaaya)",
         altText: "Posters for Film Club"
     }
 
