@@ -50,6 +50,9 @@ export default function RootLayout({
 
 export const metadata = {
   title: { default: "CtrlX Studios", template: "%s | CtrlX Studios" },
+  verfication:{
+    google : "WXW8Ngkh-5DPoh1Nb1mkFDTrOpuOF-itJ8HxLOzfW2M"
+  },
   description: "CtrlX Studios — Creative agency for UI/UX, Video, Graphic & Web Development.",
   icons : "/logo.svg",
   openGraph: {
