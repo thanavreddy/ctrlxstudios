@@ -3,6 +3,7 @@ import { Geist, Geist_Mono,Poppins} from "next/font/google";
 import "../styles/globals.css";
 // import '../styles/utilities.css'
 import '@fontsource/poppins'
+import {SpeedInsights} from "@vercel/speed-insights/next"
 import Element3D from "@/components/3D";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -40,6 +41,7 @@ export default function RootLayout({
   <SEOJsonLD />
       {/* <Navbar/> */}
         {children}
+        <SpeedInsights />
         <Footer/>
       </body>
     </html>

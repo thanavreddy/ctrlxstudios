@@ -17,6 +17,7 @@
     "@radix-ui/react-toast": "^1.2.14",
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
+    "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
