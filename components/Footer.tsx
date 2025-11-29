@@ -63,9 +63,9 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-medium mb-6 text-blue-300">Contact Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
+              <a href="https://www.instagram.com/ctrlxstudioss" className="relative overflow-hidden flex items-center text-gray-400 hover:text-blue-300 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2">Instagram</span>
-                <span>CtrlX</span>
+                <span>ctrlxstudioss</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>

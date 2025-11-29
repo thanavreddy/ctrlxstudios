@@ -43,13 +43,13 @@ const Works = () => {
                 Agility and Experience
               </h1>
               <div className="flex flex-wrap items-center mt-2 md:mt-4 gap-2 md:gap-4">
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-[Poppins] font-semibold">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-[Poppins] font-semibold">
                   to Create
-                </h1>
+                </h2>
                 <span className="w-8 md:w-12 h-1.5 bg-white block"></span>
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-[Poppins] font-semibold">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-[Poppins] font-semibold">
                   the Unexpected
-                </h1>
+                </h2>
               </div>
             </motion.div>
           </div>

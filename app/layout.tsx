@@ -6,6 +6,7 @@ import '@fontsource/poppins'
 import Element3D from "@/components/3D";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import SEOJsonLD from "@/components/SEOJsonLD";
 const geistSans = Geist({
 
   variable: "--font-geist-sans",
@@ -16,11 +17,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-export const metadata: Metadata = {
-  title: "CtrlX Studios",
-  description: "CtrlX Studios - Create the unexpected",
-  icons : "/logo%20svg.svg"
-};
+// export const metadata: Metadata = {
+//   title: "CtrlX Studios",
+//   description: "CtrlX Studios - Create the unexpected",
+//   icons : "/logo.svg"
+// };
 
 export default function RootLayout({
   children,
@@ -36,6 +37,7 @@ export default function RootLayout({
     <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
     <Element3D />
   </div>
+  <SEOJsonLD />
       {/* <Navbar/> */}
         {children}
         <Footer/>
@@ -43,3 +45,25 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata = {
+  title: { default: "CtrlX Studios", template: "%s | CtrlX Studios" },
+  description: "CtrlX Studios — Creative agency for UI/UX, Video, Graphic & Web Development.",
+  icons : "/logo.svg",
+  openGraph: {
+    title: "CtrlX Studios",
+    description: "Creative agency — design & development",
+    url: "https://ctrlxstudios.vercel.app",
+    siteName: "CtrlX Studios",
+    images: [{ url: "https://ctrlxstudios.vercel.app/og-image.jpg", width: 1200, height: 630 }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CtrlX Studios",
+    description: "Creative agency — design & development",
+    images: ["https://yourdomain.com/og-image.jpg"],
+    creator: "@ctrlx_studios",
+  },
+};
